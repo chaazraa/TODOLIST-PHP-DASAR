@@ -6,9 +6,9 @@ require_once __DIR__ . "/../View/ViewAddTodoList.php";
 require_once __DIR__ . "/../View/ViewRemoveTodoList.php";
 require_once __DIR__ . "/../Helper/Input.php";
 
-function viewAddTodoList()
+function viewShowTodoList()
 {
-    while (true) {
+    while (true){
         showTodoList();
 
         echo "MENU" . PHP_EOL;
@@ -22,7 +22,7 @@ function viewAddTodoList()
             viewAddTodoList();
         } else if ($pilihan == "2") {
             viewRemoveTodoList();
-        } else if ($piliham == "x") {
+        } else if ($pilihan == "x") {
             break;
         } else {
             echo "Pilihan tidak dimengerti" . PHP_EOL;
